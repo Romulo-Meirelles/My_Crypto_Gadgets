@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0808EEB-476E-4D89-827D-5220F2261607}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>My_Crypto_Gadgets</RootNamespace>
+    <AssemblyName>My Crypto Gadgets</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>My Crypto Gadgets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>My Crypto Gadgets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>InfinityLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\json\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="ToolsBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ToolsBox\ToolsBox\bin\Debug\ToolsBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calcular\Calculo.vb" />
+    <Compile Include="Config.Designer.vb">
+      <DependentUpon>Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\BCH_Gadgets.Designer.vb">
+      <DependentUpon>BCH_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\BCH_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\ADA_Gadgets.Designer.vb">
+      <DependentUpon>ADA_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\ADA_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\OTHER TOOLS\My_IP.Designer.vb">
+      <DependentUpon>My_IP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\OTHER TOOLS\My_IP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\NANO_Gadgets.Designer.vb">
+      <DependentUpon>NANO_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\NANO_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\DOGE_Gadgets.Designer.vb">
+      <DependentUpon>DOGE_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\DOGE_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\XMR_Gadgets.Designer.vb">
+      <DependentUpon>XMR_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\XMR_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\XRP_Gadgets.Designer.vb">
+      <DependentUpon>XRP_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\XRP_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\LTC_Gadgets.Designer.vb">
+      <DependentUpon>LTC_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\LTC_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\ETH_Gadgets.Designer.vb">
+      <DependentUpon>ETH_Gadgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\ETH_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\BTC_Gadgets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadgets\Crypto\BTC_Gadgets.Designer.vb">
+      <DependentUpon>BTC_Gadgets.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registro Raiz\Registro.vb" />
+    <Compile Include="Request\Request.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\BCH_Gadgets.resx">
+      <DependentUpon>BCH_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\ADA_Gadgets.resx">
+      <DependentUpon>ADA_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\OTHER TOOLS\My_IP.resx">
+      <DependentUpon>My_IP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\NANO_Gadgets.resx">
+      <DependentUpon>NANO_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\DOGE_Gadgets.resx">
+      <DependentUpon>DOGE_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\XMR_Gadgets.resx">
+      <DependentUpon>XMR_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\XRP_Gadgets.resx">
+      <DependentUpon>XRP_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\LTC_Gadgets.resx">
+      <DependentUpon>LTC_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\ETH_Gadgets.resx">
+      <DependentUpon>ETH_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadgets\Crypto\BTC_Gadgets.resx">
+      <DependentUpon>BTC_Gadgets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InfinityLogo.ico" />
+    <Content Include="Links_Exchange.txt" />
+    <None Include="Resources\IP_Green.png" />
+    <None Include="Resources\IP_Red.png" />
+    <None Include="Resources\Open.wav" />
+    <None Include="Resources\Pin_8x8.png" />
+    <None Include="Resources\Lock_8x8.png" />
+    <None Include="Resources\Pin_16x16.png" />
+    <None Include="Resources\Lock_16x16.png" />
+    <None Include="Resources\Day_24x24.png" />
+    <None Include="Resources\Night_24x24.png" />
+    <None Include="Resources\InfinityLogo_16x16.png" />
+    <None Include="Resources\ADA_48x48.png" />
+    <None Include="Resources\NANO_48x48.png" />
+    <None Include="Resources\DogeCoin_48x48.png" />
+    <None Include="Resources\XMR_48x48.png" />
+    <None Include="Resources\BCH_Green_48x48.png" />
+    <None Include="Resources\LTC_48x48.png" />
+    <None Include="Resources\XRP_48x48.png" />
+    <None Include="Resources\Ethereum_48x48.png" />
+    <None Include="Resources\services_8x8.png" />
+    <None Include="Resources\Close_8x8.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\BTC_48x48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
