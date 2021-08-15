@@ -13,7 +13,9 @@ Gadgets de Criptomoedas ou Criptoativos para Windows, Controle sua monitoração
 - (ADA) Cardano
 - (NANO) Nano
 - (XMR) Monero
+- (XRP) Ripple
 - (DOGE) DogeCoin
+- (IP) My IP Address
 - ✨Magic ✨
 
 ## Características
