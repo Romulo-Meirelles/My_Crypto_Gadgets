@@ -134,6 +134,8 @@ Public Class Gadgets_BTC
 
     Private Sub Config_Pic_Click(sender As System.Object, e As System.EventArgs) Handles Config_Pic.Click
         Try
+            Config.WindowState = FormWindowState.Normal
+            Config.ShowInTaskbar = True
             Config.Show()
             Config.NotifyIcon1.Visible = False
             My.Settings.Config_Hide = False
