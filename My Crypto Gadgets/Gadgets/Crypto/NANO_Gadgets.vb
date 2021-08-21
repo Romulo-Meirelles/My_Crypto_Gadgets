@@ -1,4 +1,4 @@
-﻿Imports ToolsBox.Utils
+Imports ToolsBox.Utils
 Imports ToolsBox.Utils.Mouse_Objeto
 Public Class Gadgets_NANO
     Private Price As String = Nothing
@@ -127,6 +127,8 @@ Public Class Gadgets_NANO
 
     Private Sub Config_Pic_Click(sender As System.Object, e As System.EventArgs) Handles Config_Pic.Click
         Try
+            Config.WindowState = FormWindowState.Normal
+            Config.ShowInTaskbar = True
             Config.Show()
             Config.NotifyIcon1.Visible = False
             My.Settings.Config_Hide = False
